@@ -51,7 +51,7 @@ You'll also find some tips and links to documentations that will help you comple
 ## 💭 Reflection and Self Assessment
 
 **I learned:** (repeat as needed)
-- .
+- . How to load data with pandas, how to clean up data for analysis, data visualization techniques, and analyzing the data visualization/statistics to come to certain conclusions regarding the data.
 
 **I struggled with:** (repeat as needed)
 - .
