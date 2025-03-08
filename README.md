@@ -63,7 +63,7 @@ You'll also find some tips and links to documentations that will help you comple
 [12] hours.
 
 **How often did you have to check the solution to the problem? How do you feel about that?**
-I 
+I wouldn't often check the solutions to the problems but I used the resources from this week's module to help guide me. I feel like it gave me proper guidance whenever I got stuck.
 
 **If I were to do this assignment again, I would:** (repeat as needed)
 - .
