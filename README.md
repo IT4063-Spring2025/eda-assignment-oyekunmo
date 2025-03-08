@@ -73,7 +73,14 @@ I wouldn't often check the solutions to the problems but I used the resources fr
 --------------------
 ## 📚 References and Citations
 **I used the following links, books, and other resources in my work:** (repeat as needed)
-- .
+- . https://github.com/IT4063C-Fall22/Sandbox/blob/eda/sandbox.ipynb
+- . https://www.youtube.com/watch?v=o5nRM5DlRps&t=2s
+- . https://www.youtube.com/watch?v=BqCnNIlU4CI
+- . https://pandas.pydata.org/docs/user_guide/missing_data.html#missing-data
+- . https://learning.oreilly.com/library/view/practical-statistics-for/9781492072935/ch01.html#idm45782050342856
+- . https://www.w3schools.com/python/pandas/ref_df_duplicated.asp
+- . https://www.w3schools.com/python/pandas/trypython.asp?filename=demo_ref_df_duplicated
+- . https://www.sharpsightlabs.com/blog/pandas-fillna/#example-2
   
 **I received help from the following people:** (repeat as needed)
 - . 
