@@ -54,7 +54,7 @@ You'll also find some tips and links to documentations that will help you comple
 - . How to load data with pandas, how to clean up data for analysis, data visualization techniques, and analyzing the data visualization/statistics to come to certain conclusions regarding the data.
 
 **I struggled with:** (repeat as needed)
-- .
+- . I struggled initially trying to separate the data between the numerical data and categorical data, which sometimes caused errors or unexpected results, but I eventually managed to figure it out.
 
 **I need the instructor to help me with:** (repeat as needed)
 - .
