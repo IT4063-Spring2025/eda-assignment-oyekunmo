@@ -83,7 +83,7 @@ I wouldn't often check the solutions to the problems but I used the resources fr
 - . https://www.sharpsightlabs.com/blog/pandas-fillna/#example-2
   
 **I received help from the following people:** (repeat as needed)
-- . 
+- . Adib Zaman (Instructor)
 
 ---
 ## Copyrights and License
