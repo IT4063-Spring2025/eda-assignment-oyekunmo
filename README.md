@@ -66,7 +66,7 @@ You'll also find some tips and links to documentations that will help you comple
 I wouldn't often check the solutions to the problems but I used the resources from this week's module to help guide me. I feel like it gave me proper guidance whenever I got stuck.
 
 **If I were to do this assignment again, I would:** (repeat as needed)
-- .
+- . I would have tried to figure out how I could segment the dataframes based on data types earlier so that the rest of the assignment went smoother. 
 
 **💯 Self Grade:** For this assignment, based on my work and my reflections I should get [ ] out of 20.
 
