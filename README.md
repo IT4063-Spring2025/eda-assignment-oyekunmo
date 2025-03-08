@@ -68,7 +68,7 @@ I wouldn't often check the solutions to the problems but I used the resources fr
 **If I were to do this assignment again, I would:** (repeat as needed)
 - . I would have tried to figure out how I could segment the dataframes based on data types earlier so that the rest of the assignment went smoother. 
 
-**💯 Self Grade:** For this assignment, based on my work and my reflections I should get [ ] out of 20.
+**💯 Self Grade:** For this assignment, based on my work and my reflections I should get [20] out of 20.
 
 --------------------
 ## 📚 References and Citations
