@@ -57,13 +57,13 @@ You'll also find some tips and links to documentations that will help you comple
 - . I struggled initially trying to separate the data between the numerical data and categorical data, which sometimes caused errors or unexpected results, but I eventually managed to figure it out.
 
 **I need the instructor to help me with:** (repeat as needed)
-- .
+- . I needed just a little bit of help setting up the global environment with python 3.11
 
 **How long did it take you to complete this assignment? and reflect on that**
-[ ] hours.
+[12] hours.
 
 **How often did you have to check the solution to the problem? How do you feel about that?**
-
+I 
 
 **If I were to do this assignment again, I would:** (repeat as needed)
 - .
