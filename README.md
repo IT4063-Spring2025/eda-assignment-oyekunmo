@@ -81,6 +81,7 @@ I wouldn't often check the solutions to the problems but I used the resources fr
 - . https://www.w3schools.com/python/pandas/ref_df_duplicated.asp
 - . https://www.w3schools.com/python/pandas/trypython.asp?filename=demo_ref_df_duplicated
 - . https://www.sharpsightlabs.com/blog/pandas-fillna/#example-2
+- . https://pandas.pydata.org/docs/reference/api/pandas.to_numeric.html
   
 **I received help from the following people:** (repeat as needed)
 - . Adib Zaman (Instructor)
