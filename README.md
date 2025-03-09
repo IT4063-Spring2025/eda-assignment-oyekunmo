@@ -1,3 +1,4 @@
+[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/adY-NnME)
 # Exploratory Data Analysis - Assignment
 
 ## 🔍 Overview
@@ -50,32 +51,41 @@ You'll also find some tips and links to documentations that will help you comple
 ## 💭 Reflection and Self Assessment
 
 **I learned:** (repeat as needed)
-- .
+- . How to load data with pandas, how to clean up data for analysis, data visualization techniques, and analyzing the data visualization/statistics to come to certain conclusions regarding the data.
 
 **I struggled with:** (repeat as needed)
-- .
+- . I struggled initially trying to separate the data between the numerical data and categorical data, which sometimes caused errors or unexpected results, but I eventually managed to figure it out.
 
 **I need the instructor to help me with:** (repeat as needed)
-- .
+- . I needed just a little bit of help setting up the global environment with python 3.11
 
 **How long did it take you to complete this assignment? and reflect on that**
-[ ] hours.
+[7] hours.
+- . It took me some time to complete the assignment due to some issues I faced initially with the dataframes that I had to troubleshoot.
 
 **How often did you have to check the solution to the problem? How do you feel about that?**
-
+I wouldn't often check the solutions to the problems but I used the resources from this week's module to help guide me. I feel like it gave me proper guidance whenever I got stuck.
 
 **If I were to do this assignment again, I would:** (repeat as needed)
-- .
+- . I would have tried to figure out how I could segment the dataframes based on data types earlier so that the rest of the assignment went smoother. 
 
-**💯 Self Grade:** For this assignment, based on my work and my reflections I should get [ ] out of 20.
+**💯 Self Grade:** For this assignment, based on my work and my reflections I should get [20] out of 20.
 
 --------------------
 ## 📚 References and Citations
 **I used the following links, books, and other resources in my work:** (repeat as needed)
-- .
+- . https://github.com/IT4063C-Fall22/Sandbox/blob/eda/sandbox.ipynb
+- . https://www.youtube.com/watch?v=o5nRM5DlRps&t=2s
+- . https://www.youtube.com/watch?v=BqCnNIlU4CI
+- . https://pandas.pydata.org/docs/user_guide/missing_data.html#missing-data
+- . https://learning.oreilly.com/library/view/practical-statistics-for/9781492072935/ch01.html#idm45782050342856
+- . https://www.w3schools.com/python/pandas/ref_df_duplicated.asp
+- . https://www.w3schools.com/python/pandas/trypython.asp?filename=demo_ref_df_duplicated
+- . https://www.sharpsightlabs.com/blog/pandas-fillna/#example-2
+- . https://pandas.pydata.org/docs/reference/api/pandas.to_numeric.html
   
 **I received help from the following people:** (repeat as needed)
-- . 
+- . Adib Zaman (Instructor)
 
 ---
 ## Copyrights and License
