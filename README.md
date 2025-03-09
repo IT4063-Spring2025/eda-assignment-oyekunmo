@@ -60,7 +60,8 @@ You'll also find some tips and links to documentations that will help you comple
 - . I needed just a little bit of help setting up the global environment with python 3.11
 
 **How long did it take you to complete this assignment? and reflect on that**
-[12] hours.
+[7] hours.
+- . It took me some time to complete the assignment due to some issues I faced initially with the dataframes that I had to troubleshoot.
 
 **How often did you have to check the solution to the problem? How do you feel about that?**
 I wouldn't often check the solutions to the problems but I used the resources from this week's module to help guide me. I feel like it gave me proper guidance whenever I got stuck.
