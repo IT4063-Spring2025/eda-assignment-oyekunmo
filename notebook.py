@@ -23,7 +23,7 @@
 # #### Package Imports
 # We will keep coming back to this cell to add "import" statements, and configure libraries as we need
 
-# In[118]:
+# In[2]:
 
 
 # Common imports
@@ -56,7 +56,7 @@ plt.style.use("bmh")
 
 # 
 
-# In[119]:
+# In[3]:
 
 
 # 💻 Import the dataset in the project (data/housing.csv) into a dataframe called (housing)
@@ -67,7 +67,7 @@ housing = pd.read_table('./data/housing.csv', sep=",", header=None, names=("long
 
 # #### 2.1: Get the first 6 records of the dataset
 
-# In[120]:
+# In[4]:
 
 
 # 💻 Get the first 6 records of the dataframe
@@ -76,7 +76,7 @@ housing.head(n=6)
 
 # #### 2.2: Get the last 7 records of the dataset
 
-# In[122]:
+# In[5]:
 
 
 # 💻 Get the last 7 records of the dataframe
@@ -85,7 +85,7 @@ housing.tail(7)
 
 # #### 2.3: Get a random sample of 10 records
 
-# In[123]:
+# In[6]:
 
 
 # 💻 Get a random 10 records of the dataframe
@@ -94,7 +94,7 @@ housing.sample(10)
 
 # #### 2.4: Get information about the dataset, including the number of rows, number of columns, column names, and data types of each column
 
-# In[124]:
+# In[7]:
 
 
 # 💻 Show information about the different data columns (columns, data types, ...etc.)
@@ -126,7 +126,7 @@ Ocean Proximity:    💻: Categorical-Ordinal
 # ### Task 4: Understand the data
 # #### 4.1: Get the summary statistics for the numerical columns
 
-# In[129]:
+# In[8]:
 
 
 # 💻 Show the descriptive statistics information about the columns in the data frame
@@ -155,7 +155,7 @@ numerical
 #   - Use the `value_counts()` method on the categorical columns
 # </details>
 
-# In[130]:
+# In[10]:
 
 
 # 💻 Show the frequency of the values in the ocean_proximity column
@@ -169,7 +169,7 @@ housing.value_counts('ocean_proximity')
 # #### 5.1: Visualize the distribution of the numerical columns
 # In a single figure, plot the histograms for all the numerical columns. Use a bin size of 50 for the histograms
 
-# In[131]:
+# In[11]:
 
 
 # 💻 Plot a histogram of all the data features( with a bin size of 50)
@@ -192,7 +192,7 @@ plt.show()
 # #### 5.2: Visualize the distribution of only one column
 # Plot the histogram for the `median_income` column. Use a bin size of 50 for the histogram
 
-# In[132]:
+# In[12]:
 
 
 # 💻 plot a histogram of only the median_income
@@ -209,14 +209,14 @@ housing['median_income'].hist(bins=50)
 # 
 # Try this twice, once setting the `alpha` parameter to set the transparency of the points to 0.1, and once without setting the `alpha` parameter.
 
-# In[133]:
+# In[13]:
 
 
 # 💻 scatter plat without alpha
 scatter_matrix(housing[['longitude', 'latitude']], diagonal='none')
 
 
-# In[66]:
+# In[14]:
 
 
 # 💻 scatter plat with alpha
@@ -229,10 +229,26 @@ scatter_matrix(housing[['longitude', 'latitude']], diagonal='none', alpha = 0.1)
 # 
 # (📜 Check out the examples on their docs)[https://plotly.com/python/scatter-plots-on-maps/]
 
-# In[13]:
+# In[21]:
 
 
 # 💻💯✨ Plot the data on a map of California
+import plotly.express as px
+
+housing['longitude'] = pd.to_numeric(housing['longitude'], errors='coerce')
+housing['latitude'] = pd.to_numeric(housing['latitude'], errors='coerce')
+housing['housing_median_age'] = pd.to_numeric(housing['housing_median_age'], errors='coerce')
+housing['total_rooms'] = pd.to_numeric(housing['total_rooms'], errors='coerce')
+housing['total_bedrooms'] = pd.to_numeric(housing['total_bedrooms'], errors='coerce')
+housing['population'] = pd.to_numeric(housing['population'], errors='coerce')
+housing['households'] = pd.to_numeric(housing['households'], errors='coerce')
+housing['median_income'] = pd.to_numeric(housing['median_income'], errors='coerce')
+housing['median_house_value'] = pd.to_numeric(housing['median_house_value'], errors='coerce')
+
+housing_numeric = housing.select_dtypes(include=['number'])
+housing_numeric = housing_numeric.dropna(subset=['latitude', 'longitude', 'population'])
+
+px.scatter_geo(data_frame=housing_numeric, lat='latitude', lon='longitude', size='population', locationmode='USA-states', scope='usa')
 
 
 # > 🚩 This is a good point to commit your code to your repository.
@@ -241,7 +257,7 @@ scatter_matrix(housing[['longitude', 'latitude']], diagonal='none', alpha = 0.1)
 
 # #### 6.1: Generate a correlation matrix for the numerical columns
 
-# In[134]:
+# In[23]:
 
 
 # 💻 Get the correlation matrix of the housing data
@@ -252,7 +268,7 @@ matrix
 # #### 6.2: Get the Correlation data fro the `median_house_age` column
 # sort the results in descending order
 
-# In[135]:
+# In[25]:
 
 
 # 💻 Get the correlation data for just the median_house_age
@@ -264,7 +280,7 @@ matrix['housing_median_age'].sort_values(ascending=False)
 # - show the numbers on the heatmap
 # 
 
-# In[136]:
+# In[26]:
 
 
 # 💻 Plot the correlation matrix as a heatmap
@@ -274,7 +290,7 @@ sns.heatmap(matrix, annot=True, vmin=-1, vmax=1, cmap="coolwarm")
 # #### 6.3: Visualize the correlations between some of the features using a scatter matrix
 # - Plot a scatter matrix for the `total_rooms`, `median_house_age`, `median_income`, and `median_house_value` columns
 
-# In[78]:
+# In[27]:
 
 
 # 💻 using Pandas Scatter Matrix Plotting, Plot the scatter matrix for (median_house_value, median_income, total_rooms, housing_median_age)
@@ -285,7 +301,7 @@ scatter_matrix(housing[['total_rooms', 'housing_median_age', 'median_income', 'm
 # #### 6.4: Visualize the correlations between 2 features using a scatter plot
 # - use an `alpha` value of 0.1
 
-# In[79]:
+# In[28]:
 
 
 # 💻 Plot the scatter plot for just (median_income and median_house_value)
@@ -301,7 +317,7 @@ scatter_matrix(housing[['total_rooms', 'housing_median_age']], figsize=(10,10), 
 
 # #### 7.1: Find duplicate data
 
-# In[88]:
+# In[29]:
 
 
 # 💻 Identify the duplicate data in the dataset
@@ -313,7 +329,7 @@ housing.duplicated().sum()
 
 # #### 8.1: Find missing data
 
-# In[89]:
+# In[31]:
 
 
 # 💻 Identify the missing data in the dataset
@@ -331,7 +347,7 @@ housing.isnull().sum()
 #   * you'll need to use the `sample()` method to get a sample of 5 records of the results
 # </details>
 
-# In[99]:
+# In[33]:
 
 
 # 💻 use Pandas Filtering to show all the records with missing `total_bedrooms` field
@@ -342,7 +358,7 @@ null_rows.sample(5)
 # #### 8.3: Calculate the central tendency values of the missing data feature
 # * Calculate the mean, median, trimmed mean
 
-# In[101]:
+# In[34]:
 
 
 # 💻 get the mean, median and trimmed mean of the total_bedrooms column
@@ -358,7 +374,7 @@ print(f"Trimmed Mean: {total_bedrooms_trimmed_mean}")
 # #### 8.4: Visualize the distribution of the missing data feature
 # * Plot a histogram of the missing data feature (total_bedrooms)
 
-# In[105]:
+# In[35]:
 
 
 # 💻 Plot the histogram of the total_bedrooms column
@@ -373,7 +389,7 @@ housing['total_bedrooms'].hist(figsize=(10,10))
 # 
 # [📜 You should find a good example here](https://www.sharpsightlabs.com/blog/pandas-fillna/#example-2)
 
-# In[ ]:
+# In[37]:
 
 
 # 💻 Fill the missing values in the total_bedrooms column with an appropriate value, then show the first 5 records of the new dataframe
@@ -387,7 +403,7 @@ housing_copy.head(5)
 # #### 8.6: Confirm that there are no more missing values in the new dataframe
 # * make sure the dataframe contains all features, not just the `total_bedrooms` feature
 
-# In[115]:
+# In[39]:
 
 
 # 💻 Confirm the new dataframe has no missing values
@@ -399,7 +415,7 @@ housing_copy.isnull().sum()
 # assume we didn't want to impute the missing data, and instead, we wanted to drop the rows with missing data.
 # * don't use the `inplace` parameter, instead, create a new dataframe with the updated values.
 
-# In[116]:
+# In[40]:
 
 
 # 💻 drop the missing rows of the total_bedroom and save it to a new dataframe
@@ -409,7 +425,7 @@ housing_copy2 = housing.dropna()
 # #### 8.8: Confirm that there are no more missing values in the new dataframe
 # * make sure the dataframe contains all features, not just the `total_bedrooms` feature
 
-# In[117]:
+# In[41]:
 
 
 # 💻 Confirm the new dataframe has no missing values
@@ -423,7 +439,7 @@ housing_copy2.isnull().sum()
 
 # Make sure you run the following cell; this converts this Jupyter notebook to a Python script. and will make the process of reviewing your code on GitHub easier
 
-# In[28]:
+# In[151]:
 
 
 # 🦉: The following command converts this Jupyter notebook to a Python script.
